@@ -16,6 +16,15 @@ public class QOL {
             e.printStackTrace();
         }
     }
+
+    public static void setTerminalName(String title) {
+        String code1 = "\033]0;";
+        String code2 = "\007";
+
+        System.out.print(code1 + title + code2);
+    }
+
+
     //Ints
     public static String makeRed(int number) {
         String RED = "\033[0;31m";
@@ -45,7 +54,7 @@ public class QOL {
 
     public static String makeBold(String text) {
         String BOLD = "\u001B[1m";
-        return BOLD + text + RESET;
+        return BOLD + text + RESET; 
     }
 
 
@@ -84,12 +93,6 @@ public class QOL {
             }
         }
         return centeredText.toString();
-    }
-
-
-    public string uiDraw (String ui, String replace. String replace2) {
-
-    return tui;
     }
 
     public static void setDraw(int amount) {
