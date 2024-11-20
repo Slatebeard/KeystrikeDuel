@@ -10,7 +10,7 @@ public class Settings {
 
 
         while(running) {
-
+            running = false;
 
 
 

@@ -6,13 +6,11 @@ public class MainMenu {
     private boolean running = true;
     private Scanner sc = new Scanner(System.in);
     
-    
     public MainMenu() {
         run();
     }
 
     private void run() {
-        
         int userChoice = 0;
         while (running) {
             QOL.clearConsole();
@@ -23,6 +21,7 @@ public class MainMenu {
             Art.menuBox();
             QOL.setDraw(95);
             System.out.print(">");
+            
             userChoice = sc.nextInt();
 
             switch (userChoice) {
@@ -39,33 +38,6 @@ public class MainMenu {
                 default:
                     break;
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
-
-
     }
 }

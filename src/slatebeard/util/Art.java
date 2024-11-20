@@ -1,12 +1,5 @@
 package slatebeard.util;
 
-
-
-
-
-
-
-
 public class Art {
 
     private static String welcomeMessage = "Welcome to the Keystrike Duel!";
@@ -26,15 +19,40 @@ public class Art {
     "|           2. Settings                |\n"+
     "|           3. Exit                    |\n"+
     "+-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~+";
+    private static String bigBox =
+    "+-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~++-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~++-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~+\n"+
+    "|                                                                                                                      |\n"+
+    "!                                                                                                                      !\n"+
+    "|                                                                                                                      |\n"+
+    "!           @@@@@@@@                                                                              @@@@@@@@             !\n"+
+    "|                                                                                                                      |\n"+
+    "!                                                                                                                      !\n"+
+    "|                                                                                                                      |\n"+
+    "!                                                                                                                      !\n"+
+    "|                                                                                                                      |\n"+
+    "!                                                                                                                      !\n"+
+    "|                                                                                                                      |\n"+
+    "!                                                                                                                      !\n"+
+    "|                                                                                                                      |\n"+
+    "!                                                                                                                      !\n"+
+    "|                                                                                                                      |\n"+
+    "!                                                                                                                      !\n"+
+    "|                                                                                                                      |\n"+
+    "!                                                                                                                      !\n"+
+    "|                                                                                                                      |\n"+
+    "!                                                                                                                      !\n"+
+    "|                                                                                                                      |\n"+
+    "!                                                                                                                      !\n"+
+    "|                                                                                                                      |\n"+
+    "!                                                                                                                      !\n"+
+    "+-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~++-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~++-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~+\n";
+    
+
 
 
     private static String placer = ">";
 
-
-
     private static String goodbyeMessage = "Exiting game...";
-
-
 
     public static void welcomeMessage() {
         System.out.print(QOL.centerText(welcomeMessage, 192));
@@ -44,7 +62,6 @@ public class Art {
         System.out.print(QOL.centerText(subMessage, 192));
     }
     
-
     public static void menuBox() {
         System.out.print(QOL.centerText(menuBox, 192));
     }
@@ -57,7 +74,9 @@ public class Art {
         System.out.print(QOL.centerText(goodbyeMessage,192 ));
     }
 
-
+    public static void bigBox() {
+        System.out.print(QOL.centerText(bigBox, 192));
+    }
 
 
 

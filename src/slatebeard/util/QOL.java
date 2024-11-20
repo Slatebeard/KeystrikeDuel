@@ -87,6 +87,11 @@ public class QOL {
     }
 
 
+    public string uiDraw (String ui, String replace. String replace2) {
+
+    return tui;
+    }
+
     public static void setDraw(int amount) {
         String line = " ";
         for (int i = 0; i < amount; i++) {
