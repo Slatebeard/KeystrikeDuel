@@ -10,23 +10,19 @@ public class GLogic {
     
 
     private void run() {
+
         boolean running = true;
-        
 
-
-        // String player1Name = player1.getName();
-
-
-
-        String playerUiMarker = "@@@@@@@@";
-        
-        
              
         while(running) {
             QOL.clearConsole();
+
             
-            TUI.uiDraw(Art.bigBox, playerUiMarker, "MadMax", false);
+
             
+            TUI.uiDraw(Art.bigBox, TUI.player1Key, "Max", true);
+            TUI.uiDraw(TUI.getTuiBuffer(), TUI.player2Key, "Diana", false);
+
             int choice = sc.nextInt();
 
 

@@ -6,6 +6,9 @@ public class MainMenu {
     private boolean running = true;
     private Scanner sc = new Scanner(System.in);
     
+    public Player p1 = new Player("p1", "a");
+    public Player p2 = new Player("p2", "5");
+    
     public MainMenu() {
         run();
     }
@@ -31,7 +34,7 @@ public class MainMenu {
                 case 2:
                     new Settings();
                     break;
-                case 3:
+                case 0:
                     running = false;
                     break;
 
