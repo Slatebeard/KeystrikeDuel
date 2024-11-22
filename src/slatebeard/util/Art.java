@@ -10,8 +10,9 @@ public class Art {
                             "Are you the ultimate keymaster...\n" + 
                             "Prove it!";
                             
-
-
+    
+    private static String p1NameMessage = "Enter Player 1's name";
+    private static String p2NameMessage = "Enter Player 2's name";
 
     private static String menuBox = 
     "+-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~+\n"+
@@ -20,8 +21,8 @@ public class Art {
     "|           0. Exit                    |\n"+
     "+-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~+";
     public static String bigBox =
-    "+-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~++-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~++-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~+\n"+
-    "|                   |                                       |                                       |                  |\n"+
+    "+-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~+\n"+
+    "|                   |                            Round                #1                            |                  |\n"+
     "!                                       ____________________|_____________________                                     !\n"+
     "|                                       |                                        |                                     |\n"+
     "!            @@@@@@@1                   |                                        |                  @@@@@@@2           !\n"+
@@ -38,22 +39,22 @@ public class Art {
     "|                                                                                                                      |\n"+
     "!                                   Press your choosen key when you see the word fire!                                 !\n"+
     "|______________________________________________________________________________________________________________________|\n"+
-    "!                                                          |                                                           !\n"+
-    "|                                                          |                                                           |\n"+
-    "!    Lives: |%1|  [%2]  [%3]                               |    Lives: [%4]  [%5]  [%6]                                !\n"+
-    "|                                                          |                                                           |\n"+
-    "!                                                          |                                                           !\n"+
-    "|    Best Time: @@@@@7                                     |    Best Time: @@@@@8                                      |\n"+
-    "!                                                          |                                                           !\n"+
-    "|                                                          |                                                           |\n"+
-    "!                                                          |                                                           !\n"+
-    "|                                                          |                                                           |\n"+
-    "!                                                          |                                                           !\n"+
-    "|                                                          |                                                           !\n"+
-    "!                                                          |                                                           !\n"+
-    "|                                                          |                                                           !\n"+
-    "!                                                          |                                                           !\n"+
-    "|                   |                                      |                                        |                  !\n"+
+    "!                                                           |                                                          !\n"+
+    "|                                                           |                                                          |\n"+
+    "!    Lives: [%%1]  [%%2]  [%%3]                             |    Lives: [%%4]  [%%5]  [%%6]                            !\n"+
+    "|                                                           |                                                          |\n"+
+    "!                                                           |                                                          !\n"+
+    "|    Best Time: @@@@@7                                      |    Best Time: @@@@@8                                     |\n"+
+    "!                                                           |                                                          !\n"+
+    "|                                                           |                                                          |\n"+
+    "!                                                           |                                                          !\n"+
+    "|                                                           |                                                          |\n"+
+    "!                                                           |                                                          !\n"+
+    "|                                                           |                                                          !\n"+
+    "!                                                           |                                                          !\n"+
+    "|                                                           |                                                          !\n"+
+    "!                                                           |                                                          !\n"+
+    "|                   |                                       |                                       |                  !\n"+
     "+-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~++-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~++-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~+\n";
     
 
@@ -73,6 +74,14 @@ public class Art {
     
     public static void menuBox() {
         System.out.print(QOL.centerText(menuBox, 192));
+    }
+
+    public static void p1NameMessage() {
+        System.out.println(QOL.centerText(p1NameMessage, 192));
+    }
+
+    public static void p2NameMessage() {
+        System.out.print(QOL.centerText(p2NameMessage, 192));
     }
 
     public static void placer() {

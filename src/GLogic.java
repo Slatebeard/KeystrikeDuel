@@ -4,25 +4,30 @@ import slatebeard.util.*;
 
 public class GLogic {
     private Scanner sc = new Scanner(System.in);
+
+    public String p1Name = "";
+    public String p2Name = "";
+
     public GLogic() {
         run();
     }
     
 
     private void run() {
-
         boolean running = true;
-
-             
+        
         while(running) {
             QOL.clearConsole();
-
             
-
+            QOL.setLine(25);
+            Art.p1NameMessage();
+            p1Name = sc.nextLine();
             
-            TUI.uiDraw(Art.bigBox, TUI.player1Key, "Max", true);
-            TUI.uiDraw(TUI.getTuiBuffer(), TUI.player2Key, "Diana", false);
-            TUI.uiDraw(TUI.getTuiBuffer(), TUI.player1HP1, "\u2713", false);
+            Art.p2NameMessage();
+            p2Name = sc.nextLine();
+
+            TUI.uiDrawInit(p1Name, p2Name);
+
             int choice = sc.nextInt();
 
 
