@@ -22,7 +22,7 @@ public class GLogic {
             
             TUI.uiDraw(Art.bigBox, TUI.player1Key, "Max", true);
             TUI.uiDraw(TUI.getTuiBuffer(), TUI.player2Key, "Diana", false);
-
+            TUI.uiDraw(TUI.getTuiBuffer(), TUI.player1HP1, "\u2713", false);
             int choice = sc.nextInt();
 
 

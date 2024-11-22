@@ -14,17 +14,19 @@ public class TUI {
         tuiBuffer = tui;
     }
 
+
+
     // KEYS
         //Name
     public static String player1Key = "@@@@@@@1";
     public static String player2Key = "@@@@@@@2";
         // HP
-    public static String player1HP1 = "%%1";
-    public static String player1HP2 = "%%2";
-    public static String player1HP3 = "%%3";
-    public static String player2HP1 = "%%4";
-    public static String player2HP2 = "%%5";
-    public static String player2HP3 = "%%6";
+    public static String player1HP1 = "%1";
+    public static String player1HP2 = "%2";
+    public static String player1HP3 = "%3";
+    public static String player2HP1 = "%4";
+    public static String player2HP2 = "%5";
+    public static String player2HP3 = "%6";
         // Best Time
     public static String player1BT = "@@@@@7";
     public static String player2BT = "@@@@@8";
