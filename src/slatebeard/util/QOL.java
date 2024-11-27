@@ -1,5 +1,8 @@
 package slatebeard.util;
 
+
+import java.io.*;
+
 public class QOL {
 
     private static final String RESET = "\033[0m";
@@ -105,4 +108,23 @@ public class QOL {
     public static void debug() {
         System.out.print("*DEBUG*");
     }
+
+
+    public static void switchToRawMode() {
+        try {
+            new ProcessBuilder("/bin/sh", "-c", "stty raw -echo < /dev/tty").inheritIO().start().waitFor();
+        } catch (IOException | InterruptedException e) {
+            System.err.println("Error switching to raw mode: " + e.getMessage());
+        }
+    }
+
+
+    public static void restoreTerminalMode() {
+        try {
+            new ProcessBuilder("/bin/sh", "-c", "stty cooked echo < /dev/tty").inheritIO().start().waitFor();
+        } catch (IOException | InterruptedException e) {
+            System.err.println("Error restoring terminal mode: " + e.getMessage());
+        }
+    }
+
 }

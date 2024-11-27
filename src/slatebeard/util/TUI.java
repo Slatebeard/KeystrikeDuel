@@ -30,9 +30,12 @@ public class TUI {
         // Best Time
     public static String player1BT = "@@@@@7";
     public static String player2BT = "@@@@@8";
+        // Round #
+    public static String roundNumber = "##";
+        // WordPlay
+    public static String playWord = "@@@@@@@@9";
 
 
-    // 
 
 
 
@@ -75,6 +78,15 @@ public static void uiDrawInit(String p1Name, String p2Name) {
     TUI.uiDraw(TUI.getTuiBuffer(), TUI.player2HP1, "xXx", false);
     TUI.uiDraw(TUI.getTuiBuffer(), TUI.player2HP2, "xXx", false);
     TUI.uiDraw(TUI.getTuiBuffer(), TUI.player2HP3, "xXx", false);
+
+    TUI.uiDraw(TUI.getTuiBuffer(), TUI.player1BT, "0.0000", true);
+    TUI.uiDraw(TUI.getTuiBuffer(), TUI.player2BT, "0.0000", false);
+
+    TUI.uiDraw(TUI.getTuiBuffer(), TUI.roundNumber, " ", false);
+    
+    TUI.uiDraw(TUI.getTuiBuffer(), TUI.playWord, "a", true);
+
+
 
 }
 

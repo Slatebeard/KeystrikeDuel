@@ -34,8 +34,8 @@ public class MainMenu {
                     break;
                 case 0:
                     running = false;
+                    QOL.clearConsole();
                     break;
-
                 default:
                     break;
             }
